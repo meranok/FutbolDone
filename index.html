@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FutbolDone — Sening maydoning. Sening o'ying.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="floating-controls" id="floatingControls">
+  <div class="lang-switch">
+    <button class="icon-btn lang-btn" title="Language">
+      <span class="i-globe"></span> <span class="lang-label">UZ</span>
+    </button>
+    <div class="lang-menu hidden">
+      <div class="lang-option" data-lang="uz">O'zbekcha</div>
+      <div class="lang-option" data-lang="ru">Русский</div>
+      <div class="lang-option" data-lang="en">English</div>
+    </div>
+  </div>
+  <button class="icon-btn theme-btn" title="Theme">
+    <span class="theme-icon">☀️</span>
+  </button>
+</div>
+<nav id="topNav" class="topnav hidden">
+  <div class="topnav-inner">
+    <div class="logo-wrap" id="navLogo">
+      <div class="logo-badge">⚽</div>
+      <span class="logo-text">FUTBOL<span class="accent-text">DONE</span></span>
+    </div>
+    <div class="nav-actions">
+      <button id="navDashboardBtn" class="link-btn hidden" data-i18n="nav_browse"></button>
+      <div class="lang-switch">
+        <button class="icon-btn lang-btn" title="Language">
+          <span class="i-globe"></span> <span class="lang-label">UZ</span>
+        </button>
+        <div class="lang-menu hidden">
+          <div class="lang-option" data-lang="uz">O'zbekcha</div>
+          <div class="lang-option" data-lang="ru">Русский</div>
+          <div class="lang-option" data-lang="en">English</div>
+        </div>
+      </div>
+      <button class="icon-btn theme-btn" title="Theme">
+        <span class="theme-icon">☀️</span>
+      </button>
+      <button id="navSignOutBtn" class="icon-btn hidden" title="Sign out">🚪</button>
+      <button id="navSignInBtn" class="btn btn-primary btn-sm" data-i18n="nav_signin"></button>
+    </div>
+  </div>
+</nav>
+<section id="view-welcome" class="view">
+  <div class="welcome-screen">
+    <div class="welcome-inner">
+      <div class="logo-wrap logo-lg">
+        <div class="logo-badge logo-badge-lg">⚽</div>
+        <span class="logo-text logo-text-lg">FUTBOL<span class="accent-text">DONE</span></span>
+      </div>
+      <div class="tagline" data-i18n="tagline"></div>
+      <h1 class="welcome-headline" data-i18n="hero_h1"></h1>
+      <p class="welcome-sub" data-i18n="hero_sub"></p>
+      <div class="welcome-actions">
+        <button id="welcomeStartBtn" class="btn btn-primary btn-lg" data-i18n="cta_band_btn"></button>
+        <button id="welcomeGuestBtn" class="link-underline" data-i18n="continue_guest"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="view-landing" class="view hidden">
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="logo-wrap logo-md">
+        <div class="logo-badge logo-badge-md">⚽</div>
+        <span class="logo-text logo-text-md">FUTBOL<span class="accent-text">DONE</span></span>
+      </div>
+      <div class="tagline" data-i18n="tagline"></div>
+      <h1 class="hero-headline" data-i18n="hero_h1"></h1>
+      <p class="hero-sub" data-i18n="hero_sub"></p>
+      <div class="hero-actions">
+        <button id="heroFindBtn" class="btn btn-primary btn-lg">
+          <span data-i18n="cta_find"></span> <span>→</span>
+        </button>
+        <button id="heroOwnerBtn" class="btn btn-ghost btn-lg" data-i18n="cta_owner"></button>
+      </div>
+    </div>
+  </div>
+  <div class="section-wrap">
+    <h2 class="section-title" data-i18n="feat_title"></h2>
+    <div class="grid grid-3">
+      <div class="card feature-card">
+        <div class="feature-icon">📍</div>
+        <h3 data-i18n="feat1_t"></h3>
+        <p data-i18n="feat1_d"></p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3 data-i18n="feat2_t"></h3>
+        <p data-i18n="feat2_d"></p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">👥</div>
+        <h3 data-i18n="feat3_t"></h3>
+        <p data-i18n="feat3_d"></p>
+      </div>
+    </div>
+  </div>
+  <div class="section-alt">
+    <div class="section-wrap">
+      <h2 class="section-title" data-i18n="how_title"></h2>
+      <div class="grid grid-3">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3 data-i18n="how1_t"></h3>
+          <p data-i18n="how1_d"></p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3 data-i18n="how2_t"></h3>
+          <p data-i18n="how2_d"></p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3 data-i18n="how3_t"></h3>
+          <p data-i18n="how3_d"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-wrap cta-band">
+    <h2 class="section-title" data-i18n="cta_band_title"></h2>
+    <p class="cta-band-sub" data-i18n="cta_band_sub"></p>
+    <button id="ctaBandBtn" class="btn btn-primary btn-lg" data-i18n="cta_band_btn"></button>
+  </div>
+  <footer class="footer">
+    <div class="logo-wrap">
+      <div class="logo-badge">⚽</div>
+      <span class="logo-text">FUTBOL<span class="accent-text">DONE</span></span>
+    </div>
+    <p class="footer-rights">© 2026 FutbolDone. <span data-i18n="footer_rights"></span></p>
+  </footer>
+</section>
+<section id="view-auth" class="view hidden">
+  <div class="hero hero-compact">
+    <div class="hero-inner">
+      <div class="logo-wrap logo-md">
+        <div class="logo-badge logo-badge-md">⚽</div>
+        <span class="logo-text logo-text-md">FUTBOL<span class="accent-text">DONE</span></span>
+      </div>
+      <div class="tagline" data-i18n="tagline"></div>
+    </div>
+  </div>
+  <div class="auth-card-wrap">
+    <div class="card auth-card">
+      <h2 id="authTitle" class="auth-title" data-i18n="signin_title"></h2>
+      <div class="role-toggle">
+        <button id="roleBtnPlayer" class="role-btn active" data-role="player">🏃 <span data-i18n="role_player"></span></button>
+        <button id="roleBtnOwner" class="role-btn" data-role="owner">🏟️ <span data-i18n="role_owner"></span></button>
+      </div>
+      <div id="signupOnlyFields">
+        <div class="field">
+          <label data-i18n="full_name"></label>
+          <input type="text" placeholder="Aziz Karimov" />
+        </div>
+      </div>
+      <div class="field">
+        <label data-i18n="email"></label>
+        <input type="email" placeholder="you@futboldone.com" />
+      </div>
+      <div id="signupOnlyPhone" class="field">
+        <label data-i18n="phone"></label>
+        <input type="tel" placeholder="+998 90 123 45 67" />
+      </div>
+      <div class="field">
+        <label data-i18n="password"></label>
+        <input type="password" placeholder="••••••••" />
+      </div>
+      <div id="signupOnlyConfirm" class="field">
+        <label data-i18n="confirm_password"></label>
+        <input type="password" placeholder="••••••••" />
+      </div>
+      <div id="forgotRow" class="forgot-row">
+        <span class="link-accent" data-i18n="forgot"></span>
+      </div>
+      <button id="authSubmitBtn" class="btn btn-primary btn-full" data-i18n="signin_btn"></button>
+      <div class="divider"><span data-i18n="or_continue"></span></div>
+      <button class="btn btn-google btn-full"><span class="google-dot"></span> Google</button>
+      <p class="switch-mode-text">
+        <span id="switchModePrompt" data-i18n="no_account"></span>
+        <span id="switchModeLink" class="link-accent" data-i18n="signup_free"></span>
+      </p>
+    </div>
+  </div>
+</section>
+<section id="view-browse" class="view hidden">
+  <div class="section-wrap">
+    <div class="demo-note">
+      <span class="badge badge-accent" data-i18n="demo_badge"></span>
+      <p data-i18n="demo_note"></p>
+    </div>
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" data-i18n-placeholder="search_ph" />
+    </div>
+    <div class="filters-row">
+      <select id="districtFilter"></select>
+      <select id="formatFilter"></select>
+    </div>
+    <p id="resultsCount" class="results-count"></p>
+    <div id="pitchGrid" class="grid grid-3"></div>
+  </div>
+</section>
+<section id="view-pitch-detail" class="view hidden">
+  <div class="section-wrap narrow">
+    <button id="backToBrowseBtn" class="back-btn">← <span data-i18n="back"></span></button>
+    <div id="pitchDetailContent"></div>
+  </div>
+</section>
+<section id="view-booking-success" class="view hidden">
+  <div class="section-wrap narrow success-wrap">
+    <div class="success-icon">✅</div>
+    <h2 data-i18n="booked_success"></h2>
+    <p data-i18n="booked_success_sub"></p>
+    <button id="backHomeBtn" class="btn btn-primary" data-i18n="back_home"></button>
+  </div>
+</section>
+<section id="view-player-dashboard" class="view hidden">
+  <div class="section-wrap narrow">
+    <h1 class="page-title" data-i18n="my_bookings"></h1>
+    <div class="tab-row">
+      <button id="tabUpcoming" class="pill active" data-i18n="upcoming"></button>
+      <button id="tabPast" class="pill" data-i18n="past"></button>
+    </div>
+    <div id="bookingsList"></div>
+  </div>
+</section>
+<section id="view-owner-dashboard" class="view hidden">
+  <div class="section-wrap narrow">
+    <h1 class="page-title" data-i18n="owner_overview"></h1>
+    <div class="grid grid-3" id="ownerStats"></div>
+    <div class="owner-pitches-header">
+      <h2 data-i18n="my_pitches"></h2>
+      <button id="showAddPitchBtn" class="link-btn hidden">+ <span data-i18n="add_pitch"></span></button>
+    </div>
+    <div id="pitchAddedNotice" class="added-notice hidden">✅ <span data-i18n="pitch_added"></span></div>
+    <div id="addPitchForm" class="card add-pitch-form hidden">
+      <div class="field">
+        <label data-i18n="pitch_name"></label>
+        <input type="text" id="newPitchName" placeholder="Chilonzor Arena" />
+      </div>
+      <div class="field">
+        <label data-i18n="pitch_address"></label>
+        <input type="text" id="newPitchAddress" placeholder="Chilonzor, 15-kvartal" />
+      </div>
+      <div class="field">
+        <label data-i18n="pitch_price"></label>
+        <input type="number" id="newPitchPrice" placeholder="180000" />
+      </div>
+      <div class="field">
+        <label data-i18n="pitch_format"></label>
+        <div class="pill-row" id="newPitchFormatRow"></div>
+      </div>
+      <div class="form-actions">
+        <button id="savePitchBtn" class="btn btn-primary" data-i18n="save_pitch"></button>
+        <button id="cancelPitchBtn" class="btn btn-ghost" data-i18n="cancel"></button>
+      </div>
+    </div>
+    <div id="ownerPitchesList"></div>
+  </div>
+</section>
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
